@@ -167,7 +167,8 @@ class GeneralControls():
         allObjects = pm.ls(tr = 1, l = 1)
         equivalencias = [ ("ñ", 'n'), ("á", 'a'), ("é", 'e'),
             ("í", 'i'), ("ó", 'o'), ("ú", 'u'), ("Á", 'A'),
-            ("É", 'E'), ("Í", 'i'), ("Ó", 'O'), ("Ú", 'U')]
+            ("É", 'E'), ("Í", 'i'), ("Ó", 'O'), ("Ú", 'U'),
+            ("Ñ", "N")]
 
         problems = []
         refProblems = []
