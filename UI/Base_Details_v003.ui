@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>win_details</class>
+ <widget class="QWidget" name="win_details">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lbl_title">
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>  Details</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QScrollArea" name="scrollArea_2">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>686</width>
+           <height>824</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="lbl_details">
+            <property name="text">
+             <string>
+        self.verticalLayout_2.addWidget(self.scrollArea)
+
+        self.frame_2 = QtWidgets.QFrame(self.frame_0)
+
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+
+        self.frame_2.setObjectName(&quot;frame_2&quot;)
+
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_2)
+
+        self.horizontalLayout_2.setObjectName(&quot;horizontalLayout_2&quot;)
+
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(spacerItem2)
+
+        self.btn_ok = QtWidgets.QPushButton(self.frame_2)
+
+        self.btn_ok.setObjectName(&quot;btn_ok&quot;)
+
+        self.horizontalLayout_2.addWidget(self.btn_ok)
+
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(spacerItem3)
+
+        self.verticalLayout_2.addWidget(self.frame_2)
+
+        self.horizontalLayout_3.addWidget(self.frame_0)
+
+
+
+        self.retranslateUi(win_details)
+
+        QtCore.QMetaObject.connectSlotsByName(win_details)
+
+
+
+    def retranslateUi(self, win_details):
+
+        win_details.setWindowTitle(_translate(&quot;win_details&quot;, &quot;Details&quot;, None))
+
+        self.lbl_title.setText(_translate(&quot;win_details&quot;, &quot;  Details&quot;, None))
+
+        self.lbl_details.setText(_translate(&quot;win_details&quot;, &quot;TextLabel&quot;, None))
+
+        self.btn_ok.setText(_translate(&quot;win_details&quot;, &quot;Ok&quot;, None))
+
+
+
+
+
+class MyApplication(QtWidgets.QMainWindow, Ui_win_details):
+    def __init__(self, parent=None):
+        super(MyApplication, self).__init__(parent)
+        self.setupUi(self)
+        
+window_ = MyApplication()
+window_.show()</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_ok">
+        <property name="text">
+         <string>Ok</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
